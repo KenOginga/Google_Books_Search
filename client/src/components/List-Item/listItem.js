@@ -36,13 +36,12 @@ class ListItem extends Component {
     }
 
     render() {
-        const { book } = this.props
         return (
             <div>
                 <div className="card">
                     <div className="card-header"></div>
                     <div className="card-body">
-                        <img src={this.props.image} style={{ maxWidth: "100px" }} alt="book image" />
+                        <img src={this.props.image} style={{ maxWidth: "100px" }} alt="book" />
                         <h5 className="card-title" style={{ margin: "10px 0" }}>{this.props.title}</h5>
                         <p className="card-text" >{this.props.description}</p>
                         <p style={{ fontStyle: "italic" }}>Author(s): {this.props.authors}</p>
