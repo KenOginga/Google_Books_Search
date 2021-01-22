@@ -3,9 +3,14 @@ import Nav from './components/Navs/Navs';
 
 function App() {
   return (
-    <div className="App">
-     <Nav />
-    </div>
+    <Router>
+      <div>
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route exact path="/saved" component={Saved} />
+        </Switch>
+      </div>
+    </Router>
   );
 }
 
