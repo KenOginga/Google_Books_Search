@@ -1,5 +1,7 @@
 import './App.css';
-import Nav from './components/Navs/Navs';
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Home from "./pages/books";
+import Saved from "./pages/saved";
 
 function App() {
   return (
